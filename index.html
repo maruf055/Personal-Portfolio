@@ -1,23 +1,28 @@
 
-<!doctype html>
+ <!doctype html>
 <html lang="en">
    <head>
-      <meta charset="utf-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <title> Portfolio</title>
       <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
       <link rel="stylesheet" href="style.css">
+      <link rel="stylesheet" href="responsive.css">
    </head>
    <body class="bg-light">
-      <nav class="navbar navbar-expand-lg fixed-top bg-light">
+      
+   <div id="header_section" class="fixed-top">
+      <nav class="navbar navbar-expand-lg fixed-top ">
          <div class="container-fluid">
             <a class="navbar-brand text-danger" href="">Personal</a>
-            <div class="dropdown">
-               <button class="btn btn-secondary btn-danger px-3 dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-               <i class="fas fa-bars"></i>  
+            <div class="dropdown toggle_dropdown">
+               <button class="btn btn-secondary btn-danger px-3 dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  <i class="fas fa-bars"></i>
                </button>
-               <ul class="dropdown-menu  " >
+               <ul class="dropdown-menu  ">
                   <li><a class="dropdown-item" href="#home">home</a></li>
                   <li><a class="dropdown-item" href="#about">about</a></li>
                   <li><a class="dropdown-item" href="#service">service</a></li>
@@ -33,13 +38,27 @@
             </div>
          </div>
       </nav>
+<!-- ===desktop_menu== -->
+         <div id="desktop_menu ">
+            <ul class="main_menu ">
+               <li><a   href="#home">home</a></li>
+               <li><a   href="#about">about</a></li>
+               <li><a   href="#service">service</a></li>
+               <li><a   href="#portfolio">portfolio</a></li>
+               <li><a   href="#testimonials">testimonials</a></li>
+               <li><a   href="#Hire-Me">Hire-Me</a></li>
+               <li><a   href="#contact">contact</a></li>
+            </ul>
+         </div>
+   </div><!-- End header_section -->
+
       <!--home section start-->
       <section class="home p-5 ps-2" id="home">
          <div class="container-lg">
-            <div class="row bg-succes min-vh-100 align-items-center align-content-center">
+            <div class="row bg-succes align-items-center align-content-center">
                <div class="col-md-6 mt-5 mt-md-0">
                   <div class="home-img">
-                    <img src="./img/ WhatsApp Image 2023-01-30 at 23.07.09.jpg" alt="">
+                     <img src="./img/MD-MARUF.png" alt="">
                   </div>
                </div>
                <div class="col-md-6 mt-5 mt-md-0">
@@ -130,7 +149,7 @@
       </section>
       <!--about section end-->         
       <!--service section start-->   
-      <section class="service py-5  ps-3" id="service">
+      <section class="service  ps-3" id="service">
          <div class="container-lg py-5">
             <div class="row   justify-content-center">
                <div class="col-lg-8">
@@ -229,7 +248,7 @@
       </section>
       <!--portfolio section end--> 
       <!-- freelancer section start--> 
-      <section class="freelancer-avaliable  py-5 bg-danger ms-3" id="Hire-Me">
+      <section class="freelancer-avaliable  py-5 bg-danger " id="Hire-Me">
          <div class="container-lg justify-content-center ">
             <div class="row justify-content-center ">
                <div class="col-lg-8">
@@ -261,57 +280,57 @@
                         <button     data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
                         <button    data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
                      </div>
-                     <div class="carousel-inner">
-                         <div class="testi-item carousel-item bg-primary shadow-sm rounded p-4">
-                           <div class="testi-author-info d-flex align-items-center">
-                              <img src="img/images (1).jpg" class="img-thumbnail rounded-circle"  alt="">
-                              <div class="author ms-4">
-                                 <h3 class="fs-6 mb-1">Jack Udam</h3>
-                                 <p class="text-muted m-0">Seo Manager </p>
-                              </div>
-                           </div>
-                           <p class="text-muted mt-3">Lorem ipsum, dolor sit amet consectetur
-                              adipisicing elit. Officiis, quidem. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet consectetur adipisicing.
-                           </p>
-                           <div class="ratings ">
-                              <i class="fas fa-star text-danger" ></i>
-                              <i class="fas fa-star text-danger"></i>
-                              <i class="fas fa-star text-danger"></i>
-                              <i class="fas fa-star text-danger"></i>
-                              <i class="fas fa-star text-danger"></i>
-                           </div>
-                        </div>
-                         <div class="testi-item carousel-item active bg-primary shadow-sm rounded p-4">
-                           <div class="testi-author-info d-flex align-items-center">
-                              <img src="img/images (2).jpg" class="img-thumbnail rounded-circle"  alt="">
-                              <div class="author ms-4">
-                                 <h3 class="fs-6 mb-1">Raj Himachal</h3>
-                                 <p class="text-muted m-0">Seo Manager </p>
-                              </div>
-                           </div>
-                           <p class="text-muted mt-3">Lorem ipsum, dolor sit amet consectetur
-                              adipisicing elit. Officiis, quidem. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet consectetur adipisicing.
-                           </p>
-                           <div class="ratings ">
-                              <i class="fas fa-star text-danger" ></i>
-                              <i class="fas fa-star text-danger"></i>
-                              <i class="fas fa-star text-danger"></i>
-                              <i class="fas fa-star text-danger"></i>
-                              <i class="fas fa-star text-danger"></i>
-                           </div>
-                        </div>
-                         <div class="testi-item carousel-item  bg-primary shadow-sm rounded p-4">
-                           <div class="testi-author-info d-flex align-items-center">
-                              <img src="img/images.jpg" class="img-thumbnail rounded-circle"  alt="">
-                              <div class="author ms-4">
-                                 <h3 class="fs-6 mb-1"> Rojariya</h3>
-                                 <p class="text-muted m-0">Seo Manager </p>
-                              </div>
-                           </div>
-                           <p class="text-muted mt-3">Lorem ipsum, dolor sit amet consectetur
-                              adipisicing elit. Officiis, quidem. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet consectetur adipisicing.
-                           </p>
-                           <div class="ratings ">
+<div class="carousel-inner">
+       <div class="testi-item carousel-item bg-primary shadow-sm rounded p-4">
+           <div class="testi-author-info d-flex align-items-center">
+               <img src="img/images (1).jpg" class="img-thumbnail rounded-circle"  alt="">
+                  <div class="author ms-4">
+                    <h3 class="fs-6 mb-1">Jack Udam</h3>
+                <p class="text-muted m-0">Seo Manager </p>
+            </div>
+            </div>
+<p class="text-muted mt-3">Lorem ipsum, dolor sit amet consectetur
+        adipisicing elit. Officiis, quidem. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet consectetur adipisicing.
+        </p>
+         <div class="ratings ">
+          <i class="fas fa-star text-danger" ></i>
+          <i class="fas fa-star text-danger"></i>
+          <i class="fas fa-star text-danger"></i>
+          <i class="fas fa-star text-danger"></i>
+          <i class="fas fa-star text-danger"></i>
+      </div>
+    </div>
+<div class="testi-item carousel-item active bg-primary shadow-sm rounded p-4">
+        <div class="testi-author-info d-flex align-items-center">
+          <img src="img/images (2).jpg" class="img-thumbnail rounded-circle"  alt="">
+             <div class="author ms-4">
+                <h3 class="fs-6 mb-1">Raj Himachal</h3>
+              <p class="text-muted m-0">Seo Manager </p>
+      </div>
+    </div>
+ <p class="text-muted mt-3">Lorem ipsum, dolor sit amet consectetur
+    adipisicing elit. Officiis, quidem. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet consectetur adipisicing.
+    </p>
+  <div class="ratings ">
+    <i class="fas fa-star text-danger" ></i>
+    <i class="fas fa-star text-danger"></i>
+    <i class="fas fa-star text-danger"></i>
+    <i class="fas fa-star text-danger"></i>
+    <i class="fas fa-star text-danger"></i>
+    </div>
+    </div>
+ <div class="testi-item carousel-item  bg-primary shadow-sm rounded p-4">
+       <div class="testi-author-info d-flex align-items-center">
+         <img src="img/images.jpg" class="img-thumbnail rounded-circle"  alt="">
+           <div class="author ms-4">
+            <h3 class="fs-6 mb-1"> Rojariya</h3>
+              <p class="text-muted m-0">Seo Manager </p>
+            </div>
+       </div>
+ <p class="text-muted mt-3">Lorem ipsum, dolor sit amet consectetur
+     adipisicing elit. Officiis, quidem. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet consectetur adipisicing.
+     </p> 
+      <div class="ratings ">
                               <i class="fas fa-star text-danger" ></i>
                               <i class="fas fa-star text-danger"></i>
                               <i class="fas fa-star text-danger"></i>
@@ -325,7 +344,7 @@
                         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                         <span class="visually-hidden">Previous</span>
                       </button>
-                      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
                         <span class="carousel-control-next-icon" aria-hidden="true"></span>
                         <span class="visually-hidden">Next</span>
                       </button>
@@ -338,6 +357,8 @@
 <!-- contact section start-->
 <section class="contact py-5" id="contact">
   <div class="conteiner-lg py-4">
+  <div class="row">
+  <div class="conteiner-lg py-4">
    <div class="row  justify-content-center">
      <div class="col-lg-8">
        <div class="section-title text-center">
@@ -346,7 +367,7 @@
      </div>
    </div>
    <div class="row ms-4">
-     <div class="col-5">
+     <div class="col-md-5">
        <div class="contac-item d-flex mb-3">
          <div class="icon fs-4 text-danger">
            <i class="fas fa-envelope"></i>
@@ -411,6 +432,8 @@
      </div>
    </div>
   </div>
+  </div>
+  </div>
 </section>
 <!-- contact section end-->
 <!-- footer start-->
@@ -423,6 +446,7 @@
  </div>
 </div>
 </footer>
+
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
    </body>
 </html>
